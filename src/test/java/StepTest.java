@@ -44,7 +44,7 @@ public class StepTest {
     public void testWithAnn(){
 
         SelenideLogger.addListener("allure", new AllureSelenide());
-        AnnotationTest ann=new AnnotationTest();
+        WebSteps ann=new WebSteps();
         ann.openMainPage();
         ann.clickFieldSearch();
         ann.doSearch();
